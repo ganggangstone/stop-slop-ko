@@ -2,6 +2,17 @@
 
 날짜는 YYYY-MM-DD. 버전은 의미 변화 기준. / Versions track meaningful changes. (KO / EN)
 
+## [0.12.0] - 2026-09-28
+
+실제 글 교정에서 사용자가 지적한 영어 직역 패턴을 표현 단위로 추가. / Adds translated-from-English patterns the user flagged while editing real copy, listed as concrete expressions.
+
+- **추가/Added** 상세 패턴 "영어 문장 뼈대" 절 — `X는 ~하는 N입니다` 소개문, `A도 B도 없습니다` 부정 나열, `그렇습니다` 대용 종결, 결과 없는 부정문, 사물 주어 대구, 쉼표로 사실 몰기, 의문형 표 머리글(`어디에 속하나`), `~는지와 N` 병렬. / New "English sentence skeleton" section: "X is a N that…" intros, "No X, no Y" lists, pro-form closers, negations without consequence, question-form headers, mixed clause/noun coordination.
+- **추가/Added** "직역 동사·음차"(pay→냅니다, load→올라갑니다, link→겁니다, 수렴, 실측, 결정을 뒤집다), "명사 쌓기", "숫자 표기"(고유어 수사, 대상 없는 개수), "메커니즘 설명(소개문·카피, 기술 문서 면제)" 절. / New sections for literal verb translations (including "reversed a decision"), noun stacking, native-Korean numerals, and mechanism-over-benefit copy (technical docs exempt).
+- **추가/Added** 과장 서술구·반복 수사(강조어 절), 명대사 투·잠언조 맺음(공허한 결론 절), 묻지 않은 설명(동어반복 절), 부연 줄표는 괄호로, 제목 줄표·하이픈은 개수 무관 삭제(줄표 절). / Hyperbolic phrases and "N fails to be N" rhetoric, moralizing closers, unasked explanations, and em dashes in titles.
+- **변경/Changed** 새 절마다 철칙 2(날조 금지) 가드와 레지스터 면제(기술 문서 정의문, 기사 의문형 소제목, 회고 교훈, 작은 고유어 수)를 달았다. 정확성 축 설명에 새 절 위치를 적었다. 제목 줄표를 쓰던 기존 소제목 3종을 쉼표·콜론으로 바꿨다. / Added no-fabrication guards and register exemptions to each new section; the accuracy-axis note now points to them; existing headings with em dashes switched to commas/colons.
+- **변경/Changed** 생성 모드 습관 봉쇄에 영어 뼈대 항목 추가, 부록 B에서 새 절로 상호 참조. / Generation-mode habit list and appendix B now point to the new section.
+- 출처: agent-hud 랜딩 페이지·README·카드뉴스·ADR 교정에서 받은 지적(2026-09-14 ~ 09-28). `로드`, `마찬가지입니다`는 사용자가 괜찮다고 해서 넣지 않았다. eval 케이스는 아직 추가하지 않았다. / Source: agent-hud landing page and README edits. No eval cases added yet.
+
 ## [0.11.3] - 2026-07-30
 
 전체 검토 반영 — 대화체 레지스터 면제 2건(오탐 수정), 상호 참조·형식·README 구조 정리. / Full-review pass — two conversational-register exemptions (false-positive fixes), cross-reference, formatting, and README structure cleanup.
